@@ -80,8 +80,6 @@ public class ConditionalStatement {
         // - 각각의 case 문의 break 문은 선택 사항, break 문 생략시 바로 밑의 case 문으로 넘어감
         String dayOfWeek;
         int day = 10;
-
-
         switch (day) {
             case 1:
                 dayOfWeek = "일요일";
@@ -93,14 +91,10 @@ public class ConditionalStatement {
                 dayOfWeek = "화요일";
                 break;
             case 4:
-                dayOfWeek = "수요일";
-                break;
             case 5:
-                dayOfWeek = "목요일";
-                break;
             case 6:
             case 7:
-                dayOfWeek = "금 - 토요일";
+                dayOfWeek = "수 - 토요일";
                 break;
             default:
                 dayOfWeek = "잘못된 입력입니다.";
