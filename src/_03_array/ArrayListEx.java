@@ -93,6 +93,12 @@ public class ArrayListEx {
         for (Student std1 : students) {
             System.out.println(std1.getName() + "(" + std1.getAge() + "세)");
         }
+
+        System.out.println("students : " + students);
+        //  [_03_array.Student@5b480cf9, _03_array.Student@6f496d9f, _03_array.Student@723279cf, _03_array.Student@10f87f48, _03_array.Student@b4c966a]
+        // toString 오버라이드 전 출력
+        // [name = 'park', age=10, name = 'kim', age=15, name = 'yeo', age=13, name = 'choi', age=18, name = 'hong', age=7]
+        // toString 오버라이드 후 출력
     }
 }
 
@@ -111,5 +117,17 @@ class Student {
 
     public int getAge() {
         return age;
+    }
+
+    // toString() 메서드 오버라이드
+    // : 객체를 문자열로 표현할 때 어떻게 출력할지 정의가 가능 (변수 이름으로 println 했을 때)
+    // 사용자 정의 타입에서 오버라이드 하지 않으면, Object 객체의 toString() 메서드 호출되며,
+    //  이는 객체의 클래그 이름과 해시코드를 문자열로 반환 (즉, 참조값 반환)
+
+    // 단, Integer 같은 클래스는 toString() 메서드가 따로 정의되어 있어서, 문자열로 표현할 때 Integer 객체를 갖고 있는 toString 메서드 호출
+
+    @Override
+    public String toString() {
+        return "name = '" + name + '\'' + ", age = " + age;
     }
 }

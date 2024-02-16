@@ -15,8 +15,8 @@ public class ArrayListPrac {
             }
             stringArray.add(input);
         }
-        for (int i = 0; i < stringArray.size(); i++) {
-            System.out.println(stringArray.get(i));
+        for (String s : stringArray) {
+            System.out.println(s);
         }
 
     }
