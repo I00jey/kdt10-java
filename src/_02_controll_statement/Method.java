@@ -49,7 +49,7 @@ public class Method {
 
     // call by reference(참조 전달)
     public static int mul2(int[] nums) {
-        // return nums[0] * nums[1];
+        // return nums [0] * nums [1];
         // 배열 길이가 2보다 클 때
         // 배열의 모든 원소 곱하기
         int result = 1;
