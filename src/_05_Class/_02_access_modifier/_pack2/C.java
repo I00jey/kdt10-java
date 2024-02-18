@@ -1,6 +1,7 @@
 package _05_Class._02_access_modifier._pack2;
 
-import _05_class._02_access_modifier._pack1.B;
+
+import _05_Class._02_access_modifier._pack1.B;
 
 public class C {
     // A a; // x

@@ -1,6 +1,7 @@
 package _05_Class._02_access_modifier._pack4;
 
-import _05_class._02_access_modifier._pack3.A;
+
+import _05_Class._02_access_modifier._pack3.A;
 
 public class C {
     public void method() {
