@@ -20,7 +20,8 @@ public class RectMain {
                 break;
             }
 
-            Rectangle rect = new Rectangle(ip1, ip2);
+            Rectangle rect = new Rectangle(ip1);
+            rect.setHeight(ip2);
             //ArrayList 에 Rectangles 객체 추가
             list.add(rect);
         }
